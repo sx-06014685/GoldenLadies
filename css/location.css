@@ -1,0 +1,277 @@
+.fl {
+	float: left;
+}
+.banner>img {
+	width: 100%;
+}
+main {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 24px;
+}
+main>header>ul {
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 1px solid #666;
+	padding-bottom: 8px;
+}
+
+main>header>ul>li {
+	cursor: pointer;
+	font-size: 14px;
+	color: #747474;
+	margin-right: 16px;
+}
+main>header>ul>li.change2{
+	color:darkred;
+}
+main>header>ul>li>a {
+	color: #323232;
+}
+
+
+/*侧边导航*/
+
+.baselist {
+	background: url(../images/baselist.jpg) no-repeat -2px 40px;
+}
+
+.baselist>h3 {
+	width: 125px;
+	height: 35px;
+	font-size: 22px;
+	line-height: 35px;
+	text-align: center;
+	color: #333;
+	box-sizing: border-box;
+	border: 1px solid #666666;
+	border-top: none;
+}
+
+.baselist>li {
+	margin: 20px 0 0 10px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.baselist>li>span {
+	font-size: 18px;
+	color: #6f6f6f;
+	font-weight: bold;
+}
+
+.baselist>li>ul>li {
+	font-size: 13px;
+	margin-bottom: 18px;
+	color: #666;
+}
+
+.baselist>li>ul>li.active {
+	color: #850712;
+	border-bottom: 1px solid #999;
+	padding-bottom: 6px;
+}
+
+.baselist>li>ul>li:first-of-type {
+	margin-top: 18px;
+}
+
+.open {
+	width: 120px;
+	background: url("../images/minus.png") no-repeat top right;
+}
+
+.closed {
+	width: 120px;
+	background: url("../images/add.png") no-repeat top right;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+
+/*右边的内容区块*/
+
+.content {
+	float: right;
+	margin-top: 64px;
+	width: 940px;
+	position: relative;
+}
+
+.content .mainTop {
+	height: 334px;
+	width: 842px;
+	border: solid 1px #333;
+	position: absolute;
+	padding-top: 20px;
+	right: 0;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.content .active {
+	opacity: 1;
+}
+
+.content .mainTop>div {
+	height: 358px;
+	width: 240px;
+	background: #666;
+	position: absolute;
+	top: -18px;
+	left: -60px;
+}
+
+.content .mainTop>img {
+	position: absolute;
+	top: -46px;
+	left: -96px;
+	width: 242px;
+	height: 344px;
+}
+
+.content .mainTop fieldset {
+	position: absolute;
+	width: 194px;
+	height: 44px;
+	left: 414px;
+	top: -32px;
+	text-align: center;
+	background: #fff;
+	border: solid 1px #333;
+	font-size: 12px;
+	color: #333;
+}
+
+.content .mainTop fieldset legend {
+	font-size: 22px;
+	color: #333;
+	padding: 0 20px;
+}
+
+.content .mainTop p {
+	width: 624px;
+	float: right;
+	margin: 16px 16px 0 0;
+	font-size: 12px;
+	color: #666666;
+	line-height: 20px;
+	text-align: justify;
+}
+/*滚动轮播*/
+.mainBot{
+	width:938px;
+	position: relative;
+	margin:0 auto;
+	top: 356px;
+	left:160px;
+}
+.mainBot .dbox{
+	width: 819px;
+	overflow: hidden;				
+	margin:0 auto;
+}
+.mainBot .box{
+	width: 1911px;
+	overflow: hidden;				
+	transition: all 1s;
+}
+.box>div{
+	position:relative;
+	float: left;
+	width: 257px;
+	height: 181px;
+	background: rgba(0,0,0,.7);
+	margin: 64px 8px;
+	transition: all 1s;
+	cursor: pointer;
+}
+.mainBot>img{
+	width: 257px;
+	height: 181px;
+	vertical-align: top;
+	float: left;
+	cursor: pointer;
+}
+.dbox>button{
+	position: absolute;
+	top: 50%;
+	margin-top:-16px ;
+	background: #fff;
+	color: #666;
+	border: 0;			
+	cursor: pointer;	
+	outline: none;
+	font-size: 40px;
+}
+.dbox>button:nth-of-type(1){
+	left: 0px;
+}
+.dbox>button:nth-of-type(2){
+	right: 0px;
+	color: #A1080A;
+}
+.box>div p{
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	background:rgba(170,44,28,.5);;
+	line-height:60px;
+	width: 100%;
+	opacity: 0;
+	transition: all 1s;
+	font-size: 12px;
+}
+.box>div:hover p{
+	opacity: 1;
+}
+.box>div:hover{
+	transform: scale(1.05);
+}
+/*模态框*/
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	display: none;
+}
+.modal>div{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 514px;
+	height: 362px;
+}
+.modal>div>img{
+	width: 514px;
+	height: 362px;
+}
+.modal>div>button{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: -18px;
+	left: 492px;
+	border-radius: 50%;
+	font-size: 28px;
+	color: rgba(0,0,0,.5);
+	background: rgba(255,255,255,.5);
+	transform: rotate(45deg);
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}

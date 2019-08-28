@@ -1,0 +1,105 @@
+/*banner*/
+section img{
+	width: 100%;
+	vertical-align: top;
+}
+/*main区*/
+.main{
+	width: 1196px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 6px;
+	padding-left: 4px;
+}
+.main .main_tit{
+	height: 20px;
+	border-bottom: 1px solid #666;
+	font-size: 14px;
+	padding: 24px 0 4px;
+}
+.main .main_tit p{
+	float: right;
+}
+.main .main_tit p>a{
+	color:#333;
+}
+.main .main_tit p:nth-of-type(3){
+	margin-right: 12px;
+	color: #333;
+}
+.main .main_tit p:nth-of-type(1){
+	color: #A1080A;
+}
+/*侧边导航*/
+.main_nav{
+	float: left;
+}
+.main_nav .mainT{
+	position: relative;
+}
+.main_nav .mainT h3{
+	position: absolute;
+	top: 2px;
+	font-size: 26px;
+	color: #333;
+	font-weight: 300;
+	left: 36px;
+	margin-top: 4px;
+}
+.main_nav .mainN{
+	border-left: #666 solid 1px;
+	position: relative;
+	margin-top: 10px;
+	width: 174px;
+}
+.main_nav .mainN img{
+	position: absolute;
+	top: 14px;
+	left: -5px;
+}
+.main_nav .mainN>div{
+	overflow: hidden;
+	line-height: 44px;
+	cursor: pointer;
+}
+.main_nav .mainN p{
+	margin-left: 10px;
+	height: 44px;
+	line-height: 44px;
+	float: left;
+	font-size: 17px;
+}
+.main_nav .mainN .active{
+	color: #A1080A;
+}
+.main_nav .mainN span{
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+}
+/*右边内容区*/
+.main .main_rig{
+	float: left;
+	margin-top: 40px;
+	width: 1011px;
+}
+.main .main_rig span{
+	font-size: 18px;
+	color: #333333;
+	border-bottom: #A1080A solid 1px;
+	padding-bottom: 8px;
+}
+.main .main_rig>p{
+	margin-top: 24px;
+	color: #666;
+	font-size: 14px;
+	line-height: 22px;
+}
+.main .main_rig .main_p{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.main .main_rig .main_p img{
+	vertical-align: top;
+}

@@ -1,0 +1,151 @@
+/*banner*/
+section img{
+	width: 100%;
+	vertical-align: top;
+}
+/*main区*/
+.main{
+	width: 1196px;
+	height: 710px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 6px;
+	padding-left: 4px;
+	position: relative;
+}
+.main .main_tit{
+	height: 20px;
+	border-bottom: 1px solid #666;
+	font-size: 14px;
+	padding: 24px 0 4px;
+}
+.main .main_tit p{
+	float: right;
+}
+.main .main_tit p>a{
+	color:#5c5c5c;
+}
+.main .main_tit>p:nth-of-type(3){
+	margin-right: 12px;
+	color: #333;
+}
+.main .main_tit>p:nth-of-type(2){
+	color: #666;
+	margin-right: 6px;
+}
+.main .main_tit>div>p{
+	color: #A1080A;
+	display: none;
+}
+.main .main_tit>div>.active{
+	display: block;
+}
+/*侧边导航*/
+.main_nav{
+	float: left;
+}
+.main_nav .mainT{
+	position: relative;
+}
+.main_nav .mainT h3{
+	position: absolute;
+	top: 2px;
+	font-size: 26px;
+	color: #333;
+	font-weight: 300;
+	left: 6px;
+}
+.main_nav .mainN{
+	border-left: #666 solid 1px;
+	position: relative;
+	margin-top: 10px;
+	width: 174px;
+}
+.main_nav .mainN img{
+	position: absolute;
+	top: 14px;
+	left: -5px;
+}
+.main_nav .mainN>div{
+	overflow: hidden;
+	line-height: 44px;
+	cursor: pointer;
+}
+.main_nav .mainN p{
+	margin-left: 10px;
+	height: 44px;
+	line-height: 44px;
+	float: left;
+}
+.main_nav .mainN .active{
+	color: #A1080A;
+}
+.main_nav .mainN span{
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+}
+/*右边内容区*/
+.main .main_rig{
+	float: left;
+	margin-top: 40px;
+	width: 1011px;
+	position: absolute;
+	right: 0;
+	transition: all 1s;
+	opacity: 0;
+}
+.main .active{
+	opacity: 1;
+}
+.main .main_rig span{
+	font-size: 18px;
+	color: #333333;
+	border-bottom: #A1080A solid 1px;
+	padding-bottom: 8px;
+}
+.main .main_rig>p{
+	margin-top: 30px;
+	color: #656565;
+	font-size: 14px;
+	height: 142px;
+	line-height: 22px;
+	text-align: justify;
+}
+.main_rig .mainlist{
+	display: flex;
+	justify-content: space-between;
+}
+.main_rig .mainlist .list1{
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.main_rig .mainlist .list1 img{
+	vertical-align: top;
+}
+.main_rig .mainlist .list1>p{
+	line-height: 60px;
+}
+.main_rig .mainlist .list1 .modal{
+	position: absolute;
+	height: 40px;
+	top: 249px;
+	padding: 36px 20px;
+	background: rgba(170,44,28,.5);
+	opacity: 0;
+	transition: all 1s;
+}
+.main_rig .mainlist .list1 .modal p{
+	color: #fff;
+	font-size: 12px;
+}
+.main .main_rig .mainlist .list1:hover .modal{
+	opacity: 1;
+}
+.main .main_rig:nth-of-type(2) .mainlist .list1:hover .modal{
+	opacity: 1;
+}
+.main .main_rig:nth-of-type(3) .mainlist .list1:hover .modal{
+	opacity: 1;*/
+}
